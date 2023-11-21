@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <script>
+       function Somar(){
+        var n1 = document.querySelectorAll("input")[0].valor;
+        var n2 = document.querySelectorAll("input")[1].valor;
+        soma = parsefloat(n1) + parsefloat(n2)
+        alert(soma)
+       }
+       function Subtrair(){
+        var n1 = document.querySelectorAll("input")[0].valor;
+        var n2 = document.querySelectorAll("input")[1].valor;
+        subt = parsefloat(n1) - parsefloat(n2)
+        alert(subt)
+       }
+       function Multiplicar(){
+        var n1 = document.querySelectorAll("input")[0].valor;
+        var n2 = document.querySelectorAll("input")[1].valor;
+        subt = parsefloat(n1) * parsefloat(n2)
+        alert(mult)
+       }
+       function Dividir(){
+        var n1 = document.querySelectorAll("input")[0].valor;
+        var n2 = document.querySelectorAll("input")[1].valor;
+        subt = parsefloat(n1) / parsefloat(n2)
+        alert(div)
+       }
+    </script>
+</head>
+<body>
+    <center>
+     <h1>Calculadora</h1> 
+     <p>Insira os números e clique na operação desejada</p>  
+     <input type="number" placeholder="Informe o número"/>
+     <button onclick="Somar()">Somar</button>
+     <button onclick="Multiplicar()">Multiplicar</button>
+     <p><input type="number" placeholder="Informe o número"/>
+     <button onclick="Subtrair()">Subtrair</button>
+     <button onclick="Dividir()">Dividir</button>
+    </center>
+    
+</body>
+</html>

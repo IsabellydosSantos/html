@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculo Idade</title>
+    <script>
+     function calculoidade(){
+      var nome = document.querySelectorAll("Input")[0].valor;
+      var n2 = document.querySelectorAll("Input")[1].valor;
+      idade = 2023 - parsefloat(n2)
+      alert(idade+(nome))
+     }
+    </script>
+</head>
+<body>
+ <input type="string" placeholder="Informe o nome"/>
+ <input type="number" placeholder="Informe o ano de nascimento"/>
+ <button onclick="calculoidade()">Calcular</button>
+</body>
+</html>

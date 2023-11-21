@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+ <script>
+    function Somar(){
+        var n1 = document.querySelectorAll("Input")[0].value;
+        var n2 = document.querySelectorAll("Input")[1].value;
+        
+        soma = parsefloat(n1) + parsefloat(n2)
+
+        alert(soma)
+    }
+
+ </script>
+</head>
+<body>
+    <center>
+    <h1>Calculadora</h1>
+    <p>Realize a soma de dois números</p>
+    <input type="number" placeholder="Número 1"/>
+    <input type="number" placeholder="Número 2"/>
+    <buttton onclick="Somar()">Somar</buttton>
+    </center> 
+</body>
+</html>
